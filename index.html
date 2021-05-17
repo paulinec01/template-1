@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel=“stylesheet” href=“https://www.w3schools.com/w3css/4/w3.css”>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <title>Run over everything</title>
+</head>
+<body onload="showSlides(slideIndex)">
+    <header>
+        <div id="conteneurh">
+
+            <div id="logo2"><img src="./images/logo.png" alt="logo" class="logo"></div>
+        <nav>
+            <ul>
+                <li>Shop</li>
+                <li>team</li>
+                <li>Events</li>
+                <li>Experience</li>
+                <li>compagny</li>
+                <li>Contact</li>
+            </ul>
+        
+        </nav>
+    
+            <div id="shop">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-lock"></i>
+                <p>0€</p>
+            </div>
+  <!-- Top Navigation Menu -->
+<div class="topnav">
+    <a href="#home" class="active">Logo</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>  
+        </div>
+    </header>
+
+    <section id="s1">
+        <h1>Run over everything</h1>
+        <button class="bnoir">See details</button>
+    </section>
+
+    <section id="s2">
+        <h2>Snowboards</h2>
+        <p>Aliquam erat volutpat. Curabitur ut consequat arcu eget laoreet est</p>
+        
+        <i class="fas fa-times"></i>
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+   
+    <!-- Full-width images with number and caption text -->
+    
+    <div class="mySlides fade">
+    
+      <img src="images/snowboard1.png">
+      
+    </div>
+  
+    <div class="mySlides fade">
+     
+      <img src="images/snowboard2.png">
+      
+    </div>
+  
+    <div class="mySlides fade">
+     
+      <img src="images/snowboard3.png">
+      
+    </div>
+  
+    <div class="mySlides fade">
+      
+        <img src="images/snowboard4.png">
+       
+      </div>
+
+      <div class="mySlides fade">
+       
+        <img src="images/snowboard5.png">
+       
+      </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div id="alldot">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+        <p class="snow">Snowboards extreme series</p>
+    </section>
+    <section id="s3">
+        <div class="texte">
+      <h3>The mountains snowboarding</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt auctor facilisis. Nam massa dui, imperdiet et mi ut, sagittis viverra odio. Duis et lectus eu enim gravida vulputate nec eget nisi. Nunc ultrices velit blandit, dapibus lacus in, feugiat erat. Donec non porttitor augue, sit amet lacinia purus. Nulla fringilla quam est, luctus dapibus odio suscipit ut. Vivamus et lectus a nunc fringilla volutpat. Morbi sed congue sem.</p>
+
+           <p>Aliquam erat volutpat. Curabitur ut consequat arcu, eget laoreet est. Vivamus semper nibh sit amet libero hendrerit luctus. Fusce non bibendum lorem. Fusce laoreet risus eget tortor lobortis egestas. Etiam tempus quam sed felis viverra scelerisque. Integer fringilla libero risus, vel euismod turpis auctor ac. Proin elementum aliquet libero a dapibus. Mauris et tempor dolor.</p>
+        </div>
+        </section>
+
+        <section id="s4">
+            <h2>Features</h2>
+            <i class="fas fa-times"></i>
+        <div id="blocimages">
+            <div id="image1">
+                <img src="images/img 1.png" alt="snowboard" class="img1" onclick='onClick(this)'>
+                    <p>Born Identity: Bringing Burton Hardgoods to Life</p>
+        </div>
+
+            <div id="image2">
+                <img src="images/img 2.jpg" alt="snowboard" class="img2" onclick='onClick(this)'>
+                <p>Jeremy Jones: On That Street Grind</p>
+            </div>
+
+            <div id="image3">
+                <img src="images/img 3.jpg" alt="snowboard" class="img3" onclick='onClick(this)'>
+                <p>Burton’s Tokyo Rail Days Recap</p>
+            </div>
+
+            <div id="image4">
+                <img src="images/img 4.jpg" alt="snowboard" class="img4" onclick='onClick(this)'>
+                <p>Burton’s Tokyo Rail Days Preview</p>
+            </div>
+        </div>
+               
+        <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <div class="w3-modal-content w3-animate-zoom">
+                <img id="img01" style="width:100%">
+            </div>
+        </div>
+        <script>
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+            }
+        </script>
+        </section>
+    
+        <footer>
+            <div id="contenu">
+           <div class="un"> 
+            <ul>
+                <li class="gras">products</li>
+                <li>Men</li>
+                <li>Women</li>
+                <li>Youth</li>
+            </ul>
+        </div>
+        <div class="un"> 
+            <ul>
+                <li class="gras">About</li>
+                <li>Careers and internship</li>
+                <li>Sponsorships</li>
+                <li>Team</li>
+                <li>Catalog requests/Downloads</li>
+            </ul>
+            </div>
+            <div class="un"> 
+            <ul>
+                <li class="gras">Customers support</li>
+                <li>Contact us</li>
+                <li>Shipping and order tracking</li>
+                <li>Easy Returns</li>
+                <li>Warranty</li>
+                <li>Replacement binding parts</li>
+            </ul>
+            </div>
+           
+           <div class="un">
+            <p class="gras">Newsletter</p>
+            <div id="navbar">
+            <input type="text" placeholder="Enter your email" class="blanc">
+            <button id="go">GO</button>
+        </div>
+    
+        <div id="reseaux">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </div>
+    </div>
+
+    <div id="bas">
+        <p>© 2014 Mountains Snowboards</p>
+
+        <div id="region">
+            <img src="images/flag.png">
+            <p>Change region</p>
+        </div>
+    </div>
+        </footer>
+ 
+
+        <script src="script.js"></script>
+        <script src="menu.js"></script>
+        
+
+</body>
+
+</html>
